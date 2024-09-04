@@ -19,7 +19,8 @@ export function calculateInvestmentResults({
     annualData.push({
       year: i + 1, // year identifier
       profit: profitEarnedInYear, // the amount of profit earned in this year
-      valueEndOfYear: investmentValue, // investment value at end of year
+      valueEndOfYear:  investmentValue, // investment value at end of year
+      // valueEndOfYear:  Math.round(investmentValue * 100) / 100 , // investment value at end of year
       annualInvestment: annualInvestment, // investment added in this year
     });
   }
